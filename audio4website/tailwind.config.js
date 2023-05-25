@@ -6,6 +6,13 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    maxWidth: {
+      contentContainer: '1140px',
+      container: '1440px',
+      containerSmall: '1024px',
+      containerxs: '768px',
+    },
+
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -15,4 +22,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
