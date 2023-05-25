@@ -5,7 +5,11 @@ import { useState } from 'react';
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const handleClick = () => {
-    setShowMenu(true);
+    if (!showMenu) {
+      setShowMenu(true);
+    } else {
+      setShowMenu(false);
+    }
   };
   return (
     <nav class="bg-white shadow-md dark:bg-gray-900  w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
